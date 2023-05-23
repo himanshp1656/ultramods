@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>ask anything you want : i.e. suggest me a movie, how are you or your maths and programming questions......</h1>
+
+<div class="pere">
+<div class="ai">
+<form id="ai" method="post">
+    {% csrf_token %}
+    <input type="text" class="form-control" name="user_input">
+    <button type="submit" class="btn btn-primary mt-3"> submit</button>
+</form>
+</div>
+
+<div class="container">
+</div>
+
+<div class="resonse">
+{% if response %}
+<div class="container">
+    {{ response|safe }}
+</div>
+
+
+{% endif %}
+</div>  
+</div>
+
+{% endblock body %}

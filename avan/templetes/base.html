@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa2575a81c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+              <h1>ultramods</h1>
+            <form method="get" id="searchbar" action="/search">
+            <div class="search">
+            <input type="text" placeholder="search....." name="query" id="search"> 
+            <button id="searchbtn" >search</button>
+            </div>
+            </form>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="https://t.me/+cUzhY4H4IUFhN2Vl">
+                    <li>request mods</li>
+                </a>
+                <a href="/donation">
+                    <li>donation</li>
+                </a>
+                <a href="mailto: ultra_mods@outlook.com">
+                    <li>Email</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    {% block body %}{% endblock body %}
+
+    <a href="/chatbot"> <button  id="sos-button">AI HELP</button></a>
+<div id="sos-form" style="display: none;" href="sms.js"></div>
+</body>
+
+<!-- <footer>
+
+    for promotion in our website contact <button> t.me//luciX_Y_Z </button>
+</footer> -->
+
+
+<script>
+    var sosButton = document.getElementById("sos-button")
+    var sosForm = document.getElementById("sos-form")
+</script>
+
+</html>
