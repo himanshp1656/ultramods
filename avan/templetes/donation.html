@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>razorpay</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: cursive;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+        
+        
+
+        body {
+            
+            background-color: #9489e8;
+            /* display: flex;
+            flex-direction: column; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border: 1px solid #bbbbbb;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 25%);
+            margin-left: 20PX;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .muted {
+            color: #8e7f7f;
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .btn_container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 4px 8px;
+            background-color: #a1a8f9;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .razorpay-payment-button{
+
+            visibility: hidden;
+        }
+        .paytmcolor{
+            background-color: skyblue;
+        }
+        #upi{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;
+            background-color: rgb(246, 118, 118);
+            border: red;
+            border-radius: 3em;
+            display: inline-block;
+            border: #9489e8 ;
+            border-width: 20px;
+            color: rgb(9, 10, 10);
+            margin-top: 10px;
+            height: 5em;
+            width: 20em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>ULTRAMODS</h1>
+    <form >
+    <div class="card">
+        <h1 class="title">PAY THROUGH PAYTM/UPI </h1>
+        <small class="muted">MAKE THE PAYMENT</small>
+        <div class="btn_container">
+            <!-- Payment Button -->
+            <h2>PAY ON BELOW UPI:</h2>
+            <button id="upi">professorselling@apl</button>
+            <!-- <h1 id="upi">professorselling@apl</h1> -->
+        </div>
+    </div>
+    </form>
+
+</body>
+
+</html>
+

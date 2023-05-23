@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %} search{% endblock title %}
+{% block body %}
+<h1>search: </h1>
+
+{% for post in allposts%}
+
+<div class="image_container">
+    <div class="cards image1">
+        <a href=""><img src= "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" alt="image1">
+            <br>
+            <h3>NETFLIX</h3>
+        </a>
+    </div>
+    <div class=" cards image2">
+        <a href="#"><img src="https://i.gadgets360cdn.com/large/voot-select-logo_1579595846623.jpg" alt="image2">
+            <h3>VOOT</h3>
+        </a>
+    </div>
+    <div class="cards image3">
+        <a href="#">
+            <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPWXyhBv7LH9X3_QyCUGQhFDxBIUahT9PHmTDEBhQ=s900-c-k-c0x00ffffff-no-rj" alt="image3">
+            <br>
+            <h3>ZEE5</h3>
+        </a>
+    </div>
+    <div class="cards image4">
+        <a href="Discussion Forum/Rain/rain.html"><img src="https://m.economictimes.com/thumb/msid-68490916,width-1200,height-1200,resizemode-4,imgsize-55482/hotstar-agencies.jpg" alt="image4">
+            <br>
+            <h3>HOTSTAR</h3>
+        </a>
+    </div>
+    <div class="cards image5">
+        <a href="Discussion Forum/Temperature/temperature.html"><img src="https://play-lh.googleusercontent.com/QtxELma_6y1jezI8QKqVtI8Tb0flMhPjIAzU-VSZ2jz7RwriCENXQk4M6MvUyVi5qg" alt="image5">
+            <br>    
+            <h3>SONYLV</h3>
+        </a>
+    </div>
+    <div class="cards image6">
+        <a href="Discussion Forum/Wind/wind.html"><img src="https://www.exults.com/wp-content/uploads/barrierstosuccess-768x512.jpg" alt="image6">
+            <h3>DISNEY+</h3>
+        </a>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock body %}
